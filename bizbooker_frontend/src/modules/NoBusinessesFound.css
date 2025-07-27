@@ -1,0 +1,272 @@
+body{
+    padding: 80px;
+}
+
+.no-businesses-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+.no-businesses-content {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.illustration-container {
+  margin-bottom: 2rem;
+}
+
+.empty-state-illustration {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  background: #f0f4ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.briefcase-icon {
+  color: #4361ee;
+  z-index: 2;
+}
+
+.magnifying-glass {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 3px solid #4361ee;
+  border-radius: 50%;
+  top: -10px;
+  right: -20px;
+}
+
+.magnifying-glass::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: #4361ee;
+  bottom: -15px;
+  right: -15px;
+  transform: rotate(45deg);
+}
+
+.title {
+  font-size: 2rem;
+  color: #2b2d42;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primary-btn {
+  background: #4361ee;
+  color: white;
+  border: none;
+}
+
+.primary-btn:hover {
+  background: #3a56d4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(67, 97, 238, 0.2);
+}
+
+.secondary-btn {
+  background: white;
+  color: #4361ee;
+  border: 1px solid #4361ee;
+}
+
+.secondary-btn:hover {
+  background: #f0f4ff;
+  transform: translateY(-2px);
+}
+
+.category-suggestions {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.category-suggestions h3 {
+  color: #2b2d42;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.category-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.category-card:hover {
+  border-color: #4361ee;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(67, 97, 238, 0.1);
+}
+
+.category-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #f0f4ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4361ee;
+}
+
+.category-name {
+  flex: 1;
+  font-weight: 500;
+  color: #2b2d42;
+  text-align: left;
+}
+
+.chevron-icon {
+  color: #6c757d;
+}
+
+/* Custom icons */
+.dumbbell-icon {
+  width: 24px;
+  height: 8px;
+  background: #4361ee;
+  border-radius: 4px;
+  position: relative;
+}
+
+.dumbbell-icon::before,
+.dumbbell-icon::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #4361ee;
+  top: -2px;
+}
+
+.dumbbell-icon::before {
+  left: -8px;
+}
+
+.dumbbell-icon::after {
+  right: -8px;
+}
+
+.medical-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4361ee;
+}
+
+.utensils-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.utensils-icon::before,
+.utensils-icon::after {
+  content: '';
+  position: absolute;
+  background: #4361ee;
+}
+
+.utensils-icon::before {
+  width: 18px;
+  height: 2px;
+  top: 6px;
+  left: 3px;
+}
+
+.utensils-icon::after {
+  width: 2px;
+  height: 18px;
+  top: 3px;
+  left: 11px;
+}
+
+.graduation-cap-icon {
+  width: 24px;
+  height: 16px;
+  border: 2px solid #4361ee;
+  border-radius: 50% 50% 0 0;
+  position: relative;
+}
+
+.graduation-cap-icon::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 8px;
+  border-left: 2px solid #4361ee;
+  border-right: 2px solid #4361ee;
+  bottom: -8px;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .no-businesses-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
