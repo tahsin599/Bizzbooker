@@ -1,0 +1,167 @@
+/* BusinessConfig.css */
+.business-config {
+  min-height: 100vh;
+  padding-top: 72px; /* Space for navbar */
+  background: linear-gradient(135deg, #f0f5ff 0%, #f8faff 100%);
+}
+
+.business-config__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.business-config__card {
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.business-config__card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.business-config__hours-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.business-config__day-card {
+  padding: 16px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.business-config__day-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.business-config__day-card--closed {
+  background-color: #fafafa;
+  opacity: 0.8;
+}
+
+.business-config__day-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.business-config__day-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.business-config__time-inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.business-config__time-separator {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.business-config__time-picker {
+  width: 100%;
+}
+
+.business-config__template-controls {
+  display: flex;
+  align-items: center;
+}
+
+.business-config__payment-status {
+  padding: 1rem;
+}
+
+.business-config__payment-not-setup {
+  text-align: center;
+  padding: 1rem;
+}
+
+.business-config__payment-setup {
+  padding: 0.5rem;
+}
+
+.business-config__status-items {
+  margin: 1rem 0;
+}
+
+.business-config__status-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+}
+
+.business-config__status-item--completed {
+  background-color: #f6ffed;
+  border-left: 3px solid #52c41a;
+}
+
+.business-config__status-item--pending {
+  background-color: #fffbe6;
+  border-left: 3px solid #faad14;
+}
+
+.business-config__status-icon {
+  font-size: 1.1em;
+}
+
+.business-config__payment-active {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f6ffed;
+  border-radius: 6px;
+}
+
+.business-config__action-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.business-config__success-summary {
+  padding: 1rem;
+}
+
+.business-config__business-hours-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.business-config__day-summary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .business-config__content {
+    padding: 1rem;
+  }
+
+  .business-config__hours-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .business-config__template-controls {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+}

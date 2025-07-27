@@ -1,0 +1,329 @@
+/* Main Container */
+.recommendations-page-container {
+  background-color: #f8fafc;
+  min-height: 100vh;
+  padding-top: 80px; /* Space for navbar */
+}
+
+.recommendations-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+/* Header Section */
+.recommendations-header-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+}
+
+.recommendations-main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.recommendations-subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Sections Container */
+.recommendations-sections-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Section Styles */
+.recommendations-section {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.section-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #1e293b;
+}
+
+.section-title-icon {
+  color: #6366f1;
+  width: 24px;
+  height: 24px;
+}
+
+.section-toggle-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #6366f1;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.section-toggle-button:hover {
+  background: #eef2ff;
+}
+
+/* Business Cards Grid */
+.business-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Business Card Styles */
+.business-card-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: white;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+}
+
+.business-card-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: #c7d2fe;
+}
+
+.business-image-wrapper {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.business-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.business-card-wrapper:hover .business-main-image {
+  transform: scale(1.05);
+}
+
+.business-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+}
+
+.business-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.business-badge.frequent {
+  background: rgba(99, 102, 241, 0.9);
+  color: white;
+}
+
+.business-badge.popular {
+  background: rgba(234, 179, 8, 0.9);
+  color: #1e293b;
+}
+
+.business-info-content {
+  padding: 1.5rem;
+}
+
+.business-name-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: #1e293b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.business-category-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+}
+
+.business-stats-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.business-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.view-details-action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.view-details-action-button:hover {
+  background: #4f46e5;
+}
+
+/* Empty State Styles */
+.empty-state-container {
+  text-align: center;
+  padding: 2rem;
+  color: #64748b;
+}
+
+.empty-state-message {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.explore-action-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.explore-action-button:hover {
+  background: #4f46e5;
+}
+
+/* Loading State */
+.recommendations-loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  color: #64748b;
+}
+
+.recommendations-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #e2e8f0;
+  border-top: 4px solid #6366f1;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recommendations-content-wrapper {
+    padding: 0 1rem 2rem;
+  }
+  
+  .recommendations-main-title {
+    font-size: 2rem;
+  }
+  
+  .recommendations-section {
+    padding: 1.5rem;
+  }
+  
+  .business-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .business-image-wrapper {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recommendations-header-section {
+    margin-bottom: 2rem;
+  }
+  
+  .recommendations-main-title {
+    font-size: 1.75rem;
+  }
+  
+  .section-heading {
+    font-size: 1.3rem;
+  }
+  
+  .section-header-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .section-toggle-button {
+    align-self: flex-end;
+  }
+}

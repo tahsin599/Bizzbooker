@@ -1,0 +1,28 @@
+/* styles/variables.css */
+:root {
+  /* Colors */
+  --primary: #4361ee;
+  --primary-dark: #3b56d4;
+  --primary-light: #4895ef;
+  --secondary: #3a0ca3;
+  --accent: #f72585;
+  --dark: #1e1e2f;
+  --light: #ffffff;
+  --gray: #6c757d;
+  --light-gray: #f8f9fa;
+  --border-color: rgba(0, 0, 0, 0.1);
+  
+  /* Sizes */
+  --nav-height: 72px;
+  --border-radius: 10px;
+  --border-radius-sm: 6px;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  --container-width: 90%;
+  --section-padding: 2rem;
+  --card-padding: 2rem;
+  --standard-gap: 2rem;
+  --small-gap: 1rem;
+  
+  /* Transitions */
+  --transition: all 0.3s ease;
+}
